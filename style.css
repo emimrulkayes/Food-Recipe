@@ -91,14 +91,27 @@ section {
 }
 
 .item {
+    background: aliceblue;
+    padding: 1.5rem;
     border-radius: .7rem;
     overflow: hidden;
+}
+
+.item:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 1px 4px;
+}
+.item:hover .item-footer .view-btn {
+    background: orangered;
+}
+
+.item img {
+    border-radius: 0.5rem;
 }
 
 .item-footer {
     background: aliceblue;
     color: #181818;
-    padding: 1.5rem 2rem 3rem 2rem;
+    padding: 2rem 0;
 }
 
 .food-title {
@@ -110,7 +123,7 @@ section {
 .food-desc {
     font-size: 1.6rem;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .view-btn {
